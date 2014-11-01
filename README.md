@@ -10,7 +10,7 @@ This AppleScript toggles an AU Lab.app '.trak' file and soundflower 2ch output s
 
 3) open 'equalizer-toggle.scpt' file with AppleScript Editor.app and replace YOUR_USER_NAME_HERE with your OSX user name
 
-4) Save script as "Equalizer Toggle.app" in your Applications folder and attempt to run it (OSX 10.9.5 Mavericks will throw a security alert)
+4) File --> Export script as "Equalizer Toggle.app" in your Applications folder and attempt to run it (OSX 10.9.5 Mavericks will throw a security alert)
 
 5) Give permission for the app to run in: Sysytem Preferences -> Security & Privacy --> Privacy --> Accessibility
 
