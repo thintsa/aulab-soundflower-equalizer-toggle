@@ -18,9 +18,12 @@ This AppleScript toggles an AU Lab.app '.trak' file and soundflower 2ch output s
 This application is a toggle. Run the app to turn on the equalizer settings in AU Lab and set your sound ouput settings to Soundflower (2ch). Run it again to reset your sound output settings to "Headphones" and quit AU Lab. I recommend using Alfred or Quicksilver for quick access. Enjoy :)
 
 #Extra Setup
-###Creating an icon
-I used this icon: [iconmonstr.com](http://iconmonstr.com/g/?icon=iconmonstr-sound-wave-2-icon.png)
+###Creating an icon:
 
-1) Right click on your Equalizer Toggle.app and choose 'Get Info'
+1) Create or download an icon. I used this icon: [iconmonstr.com](http://iconmonstr.com/g/?icon=iconmonstr-sound-wave-2-icon.png)
 
-2) You need an icon in ICNS format. I used this website to convert the icon PNG to ICNS: http://iconverticons.com/online/
+2) Convert an icon to ICNS format (Skip this step if it is already in ICNS format). I used this website to convert the icon PNG to ICNS: http://iconverticons.com/online/
+
+3) Right-click on your Equalizer Toggle.app and choose 'Get Info'
+
+4) Drag your ICNS file to the icon placeholder in the top left of the Get Info window.
