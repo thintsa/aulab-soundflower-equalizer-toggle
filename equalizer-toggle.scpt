@@ -22,6 +22,8 @@ tell application "System Events"
 			end tell
 		end tell
 		tell application "System Preferences" to quit
+		delay 1 --> allow time for the notification to trigger
+		display notification "System-wide EQ is disabled"
 	end if
 	if "AU Lab" is not in ProcessList then
 		tell application "AU Lab"
@@ -43,5 +45,7 @@ tell application "System Events"
 				set visible of process "AU Lab" to false
 			end tell
 		end tell
+		delay 1 --> allow time for the notification to trigger
+		display notification "System-wide EQ is enabled"
 	end if
 end tell
