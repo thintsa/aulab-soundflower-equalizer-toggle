@@ -4,7 +4,7 @@ aulab-soundflower-equalizer-toggle
 This AppleScript toggles an AU Lab.app '.trak' file and soundflower 2ch output sound settings.
 
 #Directions
-1) Download and install [AU Lab](https://www.apple.com/itunes/mastered-for-itunes/) and [Soundflower](https://code.google.com/p/soundflower/downloads/list) (restart required)
+1) Download and install [AU Lab](https://www.apple.com/itunes/mastered-for-itunes/) and [Soundflower](https://code.google.com/p/soundflower/downloads/list) (restart required). If you experience snapping sound you can also try [Sound Siphon](http://staticz.com/soundsiphon/) demo version instead of Soundflower
 
 2) place the SexyAudioEqualizer.trak file in your Documents directory
 

@@ -34,7 +34,7 @@ tell application "System Events"
 			end tell
 			tell application "System Events" to tell process "System Preferences"
 				tell table 1 of scroll area 1 of tab group 1 of window 1
-					select (row 2) -- assumes this is "Soundflower (2ch)"
+					select (row 2) -- assumes this is "Soundflower (2ch)" or "Sound Siphon Out"
 				end tell
 			end tell
 			tell application "System Preferences" to quit
