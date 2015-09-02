@@ -6,9 +6,9 @@ This AppleScript toggles an AU Lab.app '.trak' file and soundflower 2ch output s
 #Directions
 1) Download and install [AU Lab](https://www.apple.com/itunes/mastered-for-itunes/) and [Soundflower](https://code.google.com/p/soundflower/downloads/list) (restart required). If you experience snapping sound you can also try [Sound Siphon](http://staticz.com/soundsiphon/) demo version instead of Soundflower
 
-2) place the SexyAudioEqualizer.trak file in your Documents directory
+2) Open AU Lab and set your EQ, see e.g. http://osxdaily.com/2012/05/18/equalizer-for-all-audio-mac-os-x/, and set AU Lab to open it automatically: AU Lab Preferences -> Document -> Open a specific document
 
-3) open 'equalizer-toggle.scpt' file with AppleScript Editor.app and replace YOUR_USER_NAME_HERE with your OSX user name
+3) Open 'equalizer-toggle' file with AppleScript Editor
 
 4) File --> Export script as "Equalizer Toggle.app" in your Applications folder and attempt to run it (OSX 10.9.5 Mavericks will throw a security alert)
 
