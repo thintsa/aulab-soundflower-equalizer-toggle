@@ -12,7 +12,7 @@ tell application "System Events"
 			close (every window whose name is "Document Configuration")
 			quit
 		end tell
-		tell application "System Preferences" to activate
+		tell application "System Preferences" to run
 		tell application "System Preferences"
 			reveal anchor "output" of pane id "com.apple.preference.sound"
 		end tell
@@ -28,7 +28,7 @@ tell application "System Events"
 	if "AU Lab" is not in ProcessList then
 		tell application "AU Lab"
 			open "Users:YOUR_USER_NAME_HERE:Documents:SexyAudioEqualizer.trak" 
-			tell application "System Preferences" to activate
+			tell application "System Preferences" to run
 			tell application "System Preferences"
 				reveal anchor "output" of pane id "com.apple.preference.sound"
 			end tell
