@@ -12,7 +12,7 @@ This AppleScript toggles an AU Lab.app '.trak' file and soundflower 2ch output s
 
 4) File --> Export script as "Equalizer Toggle.app" in your Applications folder and attempt to run it (OSX 10.9.5 Mavericks will throw a security alert)
 
-5) Give permission for the app to run in: Sysytem Preferences -> Security & Privacy --> Privacy --> Accessibility
+5) Give permission for the app to run in: System Preferences -> Security & Privacy --> Privacy --> Accessibility
 
 #How it works
 This application is a toggle. Run the app to turn on the equalizer settings in AU Lab and set your sound ouput settings to Soundflower (2ch). Run it again to reset your sound output settings to "Headphones" and quit AU Lab. I recommend using Alfred or Quicksilver for quick access. Enjoy :)
