@@ -26,26 +26,27 @@ tell application "System Events"
 		display notification "System-wide EQ is disabled"
 	end if
 	if "AU Lab" is not in ProcessList then
-		tell application "AU Lab"
-			open "Users:YOUR_USER_NAME_HERE:Documents:SexyAudioEqualizer.trak" 
-			tell application "System Preferences" to run
-			tell application "System Preferences"
-				reveal anchor "output" of pane id "com.apple.preference.sound"
-			end tell
-			tell application "System Events" to tell process "System Preferences"
-				tell table 1 of scroll area 1 of tab group 1 of window 1
-					select (row 2) -- assumes this is "Soundflower (2ch)" or "Sound Siphon Out"
-				end tell
-			end tell
-			tell application "System Preferences" to quit
-			tell application "AU Lab"
-				close (every window whose name is "Document Configuration")
-			end tell
-			tell application "Finder"
-				set visible of process "AU Lab" to false
+		tell application "System Preferences" to run
+		tell application "System Preferences"
+			reveal anchor "output" of pane id "com.apple.preference.sound"
+		end tell
+		tell application "System Events" to tell process "System Preferences"
+			tell table 1 of scroll area 1 of tab group 1 of window 1
+				select (row 2) -- assumes this is "Soundflower (2ch)" or "Sound Siphon Out"
 			end tell
 		end tell
+		tell application "System Preferences" to quit
+		tell application "AU Lab" to activate
+		tell application "System Events"
+			repeat
+				delay 0.1
+				if (count of windows) of process "AU Lab" is greater than 0 then exit repeat
+			end repeat
+			repeat until visible of process "AU Lab" is false
+				delay 0.1
+				set visible of process "AU Lab" to false
+			end repeat
+		end tell
 		delay 1 --> allow time for the notification to trigger
-		display notification "System-wide EQ is enabled"
-	end if
+		display notification "System-wide EQ is enabled"	end if
 end tell
