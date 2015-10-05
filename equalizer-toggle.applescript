@@ -13,9 +13,11 @@ tell application "System Events"
 			quit
 		end tell
 		tell application "System Preferences" to run
-		tell application "System Preferences"
+		delay 0.1
+				tell application "System Preferences"
 			reveal anchor "output" of pane id "com.apple.preference.sound"
 		end tell
+		delay 0.1
 		tell application "System Events" to tell process "System Preferences"
 			tell table 1 of scroll area 1 of tab group 1 of window 1
 				select (row 1) -- should be "Headphones"
@@ -27,9 +29,11 @@ tell application "System Events"
 	end if
 	if "AU Lab" is not in ProcessList then
 		tell application "System Preferences" to run
+		delay 0.1
 		tell application "System Preferences"
 			reveal anchor "output" of pane id "com.apple.preference.sound"
 		end tell
+		delay 0.1
 		tell application "System Events" to tell process "System Preferences"
 			tell table 1 of scroll area 1 of tab group 1 of window 1
 				select (row 2) -- assumes this is "Soundflower (2ch)" or "Sound Siphon Out"
@@ -48,5 +52,7 @@ tell application "System Events"
 			end repeat
 		end tell
 		delay 1 --> allow time for the notification to trigger
-		display notification "System-wide EQ is enabled"	end if
+		display notification "System-wide EQ is enabled"
+	end if
 end tell
+
